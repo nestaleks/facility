@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hygge Business - Minimalistisches Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>HYGGE</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link active">Startseite</a></li>
+                <li><a href="#about" class="nav-link">Über uns</a></li>
+                <li><a href="#facility-management" class="nav-link">Facility Management</a></li>
+                <li><a href="#space-expansion" class="nav-link">Flächenentwicklung</a></li>
+                <li><a href="#office-management" class="nav-link">Office Management</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero parallax-container animate-on-scroll">
+            <div class="parallax-bg" data-speed="0.5"></div>
+            <div class="hero-content">
+                <div class="hero-text-animation">
+                    <div class="maskOut">
+                        <div class="mask"><div>Facility</div></div>
+                        <div class="mask"><div>Management</div></div>
+                        <div class="mask"><div>Excellence</div></div>
+                    </div>
+                </div>
+                <p class="hero-subtitle fade-in-up" data-delay="200">Menschen im Mittelpunkt. Qualität im Detail.</p>
+                <div class="hero-line fade-in-up" data-delay="400"></div>
+                <button class="cta-button fade-in-up" data-delay="600" onclick="smoothScrollTo('#about')">Mehr erfahren</button>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about animate-on-scroll">
+            <div class="container">
+                <div class="section-number fade-in-left">01</div>
+                <div class="about-content">
+                    <div class="about-text fade-in-right">
+                        <h2>Über uns</h2>
+                        <p class="lead">Wir schaffen Arbeitsräume, in denen Technologie den Menschen dient und nicht umgekehrt.</p>
+                        <p>Unser Ansatz basiert auf einem tiefen Verständnis der Bedürfnisse moderner Unternehmen und dem Streben nach Perfektion in jedem Detail.</p>
+                        <ul class="benefits-list">
+                            <li class="slide-in-left" data-delay="100">Personalisierte Lösungen</li>
+                            <li class="slide-in-left" data-delay="200">Höchste Qualitätsstandards</li>
+                            <li class="slide-in-left" data-delay="300">Innovative Technologien</li>
+                            <li class="slide-in-left" data-delay="400">Nachhaltige Entwicklung</li>
+                        </ul>
+                    </div>
+                    <div class="about-visual">
+                        <div class="visual-element parallax-container fade-in-right" data-delay="300">
+                            <div class="parallax-bg" data-speed="0.3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FACILITY MANAGEMENT SECTION -->
+        <section id="facility-management" class="service-section animate-on-scroll">
+            <div class="container">
+                <div class="section-number fade-in-left">02</div>
+                <div class="section-header fade-in-up">
+                    <h2>Facility Management</h2>
+                    <p class="section-subtitle">Umfassendes Infrastrukturmanagement</p>
+                </div>
+                <div class="services-list">
+                    <div class="service-item fade-in-up" data-delay="100">
+                        <div class="service-number">01</div>
+                        <div class="service-content">
+                            <h3>Technischer Service</h3>
+                            <p>Professionelle Wartung aller Gebäudetechnik mit modernsten Monitoring- und Diagnosetechnologien</p>
+                            <ul class="service-features">
+                                <li>24/7 Systemüberwachung</li>
+                                <li>Präventive Wartung</li>
+                                <li>Notfall-Service</li>
+                                <li>Energieeffizienz</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item fade-in-up" data-delay="200">
+                        <div class="service-number">02</div>
+                        <div class="service-content">
+                            <h3>Sicherheit</h3>
+                            <p>Umfassende Sicherheitslösungen für Objektschutz, einschließlich physischer Sicherheit und Informationsschutz</p>
+                            <ul class="service-features">
+                                <li>Zutrittskontrollsysteme</li>
+                                <li>Videoüberwachung</li>
+                                <li>Sicherheitsanlagen</li>
+                                <li>Cybersicherheit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-item fade-in-up" data-delay="300">
+                        <div class="service-number">03</div>
+                        <div class="service-content">
+                            <h3>Energieeffizienz</h3>
+                            <p>Ressourcenoptimierung und Senkung der Betriebskosten durch innovative Lösungen</p>
+                            <ul class="service-features">
+                                <li>Energieaudit</li>
+                                <li>Smart Management Systeme</li>
+                                <li>Alternative Energien</li>
+                                <li>Ökologische Technologien</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPACE EXPANSION SECTION -->
+        <section id="space-expansion" class="service-section alt-bg animate-on-scroll">
+            <div class="container">
+                <div class="section-number fade-in-left">03</div>
+                <div class="expansion-content">
+                    <div class="expansion-text fade-in-right">
+                        <h2>Flächenentwicklung</h2>
+                        <p class="lead">Von der Konzeption bis zur Realisierung</p>
+                        <p>Wir spezialisieren uns auf die Transformation von Arbeitsräumen und schaffen moderne Büros, die Produktivität und Komfort fördern.</p>
+                        
+                        <div class="process-timeline">
+                            <div class="timeline-item slide-in-left" data-delay="100">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Analyse</h4>
+                                    <p>Untersuchung der Bedürfnisse und Möglichkeiten Ihres Unternehmens</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item slide-in-left" data-delay="200">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Planung</h4>
+                                    <p>Entwicklung optimaler Lösungen unter Berücksichtigung aller Anforderungen</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item slide-in-left" data-delay="300">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Umsetzung</h4>
+                                    <p>Professionelle Ausführung der Arbeiten in den vereinbarten Terminen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expansion-visual">
+                        <div class="visual-grid">
+                            <div class="grid-item parallax-container scale-in" data-delay="100">
+                                <div class="parallax-bg" data-speed="0.2"></div>
+                                <div class="grid-overlay">
+                                    <h5>Moderne Büros</h5>
+                                </div>
+                            </div>
+                            <div class="grid-item parallax-container scale-in" data-delay="200">
+                                <div class="parallax-bg" data-speed="0.4"></div>
+                                <div class="grid-overlay">
+                                    <h5>Besprechungsräume</h5>
+                                </div>
+                            </div>
+                            <div class="grid-item parallax-container scale-in" data-delay="300">
+                                <div class="parallax-bg" data-speed="0.3"></div>
+                                <div class="grid-overlay">
+                                    <h5>Ruhezonen</h5>
+                                </div>
+                            </div>
+                            <div class="grid-item parallax-container scale-in" data-delay="400">
+                                <div class="parallax-bg" data-speed="0.5"></div>
+                                <div class="grid-overlay">
+                                    <h5>Coworking</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFICE MANAGEMENT SECTION -->
+        <section id="office-management" class="service-section animate-on-scroll">
+            <div class="container">
+                <div class="section-number fade-in-left">04</div>
+                <div class="section-header fade-in-up">
+                    <h2>Office Management</h2>
+                    <p class="section-subtitle">Umfassende Betreuung von Büroräumen</p>
+                </div>
+                <div class="office-grid">
+                    <div class="office-item fade-in-up" data-delay="100">
+                        <div class="office-icon parallax-container">
+                            <div class="parallax-bg" data-speed="0.2"></div>
+                            <div class="icon-overlay">
+                                <span class="icon-symbol">✨</span>
+                            </div>
+                        </div>
+                        <h3>Reinigung</h3>
+                        <p>Professionelle Büroreinigung mit umweltfreundlichen Reinigungsmitteln</p>
+                        <ul class="office-features">
+                            <li>Tägliche Reinigung</li>
+                            <li>Grundreinigung</li>
+                            <li>Desinfektion</li>
+                            <li>Pflanzenpflege</li>
+                        </ul>
+                    </div>
+                    <div class="office-item fade-in-up" data-delay="200">
+                        <div class="office-icon parallax-container">
+                            <div class="parallax-bg" data-speed="0.2"></div>
+                            <div class="icon-overlay">
+                                <span class="icon-symbol">📦</span>
+                            </div>
+                        </div>
+                        <h3>Beschaffung</h3>
+                        <p>Organisation von Büromateriallieferungen und Lagerverwaltung</p>
+                        <ul class="office-features">
+                            <li>Bestandsverwaltung</li>
+                            <li>Automatische Bestellungen</li>
+                            <li>Qualitätskontrolle</li>
+                            <li>Kostenoptimierung</li>
+                        </ul>
+                    </div>
+                    <div class="office-item fade-in-up" data-delay="300">
+                        <div class="office-icon parallax-container">
+                            <div class="parallax-bg" data-speed="0.2"></div>
+                            <div class="icon-overlay">
+                                <span class="icon-symbol">🎉</span>
+                            </div>
+                        </div>
+                        <h3>Veranstaltungen</h3>
+                        <p>Organisation von Firmenveranstaltungen, Konferenzen und Geschäftstreffen</p>
+                        <ul class="office-features">
+                            <li>Veranstaltungsplanung</li>
+                            <li>Technische Ausstattung</li>
+                            <li>Catering</li>
+                            <li>Logistik</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact animate-on-scroll">
+            <div class="container">
+                <div class="section-number fade-in-left">05</div>
+                <div class="contact-content">
+                    <div class="contact-info fade-in-up">
+                        <h2>Kontakt</h2>
+                        <p class="lead">Kontaktieren Sie uns für die Besprechung Ihres Projekts</p>
+                        <div class="contact-grid">
+                            <div class="contact-item slide-in-left" data-delay="100">
+                                <div class="contact-label">Telefon</div>
+                                <div class="contact-value">+7 (495) 123-45-67</div>
+                                <div class="contact-note">Täglich von 9:00 bis 21:00</div>
+                            </div>
+                            <div class="contact-item slide-in-left" data-delay="200">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@hygge-business.ru</div>
+                                <div class="contact-note">Antwort innerhalb einer Stunde</div>
+                            </div>
+                            <div class="contact-item slide-in-left" data-delay="300">
+                                <div class="contact-label">Adresse</div>
+                                <div class="contact-value">Berlin, Geschäftszentrum, 123</div>
+                                <div class="contact-note">Geschäftszentrum "Nordturm", 20. Etage</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form fade-in-right">
+                        <h3>Nachricht senden</h3>
+                        <form class="contact-form-minimal">
+                            <div class="form-group slide-in-right" data-delay="100">
+                                <label>Name *</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group slide-in-right" data-delay="150">
+                                <label>Email *</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="form-group slide-in-right" data-delay="200">
+                                <label>Telefon</label>
+                                <input type="tel">
+                            </div>
+                            <div class="form-group slide-in-right" data-delay="250">
+                                <label>Unternehmen</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-group slide-in-right" data-delay="300">
+                                <label>Service von Interesse</label>
+                                <select>
+                                    <option value="">Service wählen</option>
+                                    <option value="facility">Facility Management</option>
+                                    <option value="expansion">Flächenentwicklung</option>
+                                    <option value="office">Office Management</option>
+                                    <option value="consultation">Beratung</option>
+                                </select>
+                            </div>
+                            <div class="form-group slide-in-right" data-delay="350">
+                                <label>Nachricht *</label>
+                                <textarea rows="4" placeholder="Erzählen Sie uns von Ihrem Projekt..." required></textarea>
+                            </div>
+                            <div class="form-group checkbox-group slide-in-right" data-delay="400">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" required>
+                                    <span class="checkmark"></span>
+                                    Ich stimme der <a href="#" target="_blank">Datenschutzrichtlinie</a> zu *
+                                </label>
+                            </div>
+                            <button type="submit" class="submit-button slide-in-right" data-delay="450">Senden</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer animate-on-scroll">
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <div class="footer-brand">
+                    <h3>HYGGE</h3>
+                    <p>Wir schaffen Räume für den Erfolg</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#facility-management" onclick="smoothScrollTo('#facility-management')">Facility Management</a></li>
+                            <li><a href="#space-expansion" onclick="smoothScrollTo('#space-expansion')">Flächenentwicklung</a></li>
+                            <li><a href="#office-management" onclick="smoothScrollTo('#office-management')">Office Management</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Unternehmen</h4>
+                        <ul>
+                            <li><a href="#about" onclick="smoothScrollTo('#about')">Über uns</a></li>
+                            <li><a href="#contact" onclick="smoothScrollTo('#contact')">Kontakt</a></li>
+                            <li><a href="#">Karriere</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-year">
+                    <span>2024</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hygge Business. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scroll-animations.js"></script>
+</body>
+</html>
