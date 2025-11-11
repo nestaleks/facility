@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -86,6 +86,14 @@
             background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
         }
 
+        .variant-card.variant-5::before {
+            background: linear-gradient(90deg, #0f1b2c 0%, #00d4ff 100%);
+        }
+
+        .variant-card.variant-6::before {
+            background: linear-gradient(90deg, #c2561a 0%, #f4c49a 100%);
+        }
+
         .variant-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
@@ -127,6 +135,14 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
 
+        .variant-5 .variant-number {
+            background: linear-gradient(135deg, #0f1b2c 0%, #00d4ff 100%);
+        }
+
+        .variant-6 .variant-number {
+            background: linear-gradient(135deg, #c2561a 0%, #f4c49a 100%);
+        }
+
         .variant-title {
             font-size: 1.8rem;
             font-weight: 600;
@@ -164,7 +180,7 @@
         }
 
         .variant-features li::before {
-            content: '✓';
+            content: 'вњ“';
             position: absolute;
             left: 0;
             color: var(--accent-color);
@@ -233,6 +249,16 @@
             border: 1px solid #667eea;
         }
 
+        .variant-5 .preview-mockup {
+            background: linear-gradient(135deg, #f1fbff 0%, #dff3ff 100%);
+            border: 1px solid #00d4ff;
+        }
+
+        .variant-6 .preview-mockup {
+            background: linear-gradient(135deg, #fff4eb 0%, #fde5d2 100%);
+            border: 1px solid #c2561a;
+        }
+
         .mockup-header {
             height: 30px;
             background: var(--header-bg);
@@ -265,6 +291,16 @@
             color: white;
         }
 
+        .variant-5 .mockup-header {
+            background: #0f1b2c;
+            color: white;
+        }
+
+        .variant-6 .mockup-header {
+            background: #c2561a;
+            color: white;
+        }
+
         .mockup-content {
             flex: 1;
             display: flex;
@@ -292,6 +328,14 @@
 
         .variant-4 .mockup-line {
             background: #e8ebff;
+        }
+
+        .variant-5 .mockup-line {
+            background: #cfeeff;
+        }
+
+        .variant-6 .mockup-line {
+            background: #ffe0c9;
         }
 
         .mockup-line:nth-child(1) { width: 80%; }
@@ -336,6 +380,16 @@
 
         .variant-4 .btn-primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .variant-5 .btn-primary {
+            background: linear-gradient(135deg, #00d4ff 0%, #0f1b2c 100%);
+            color: #041225;
+        }
+
+        .variant-6 .btn-primary {
+            background: linear-gradient(135deg, #c2561a 0%, #f4c49a 100%);
+            color: #fffdf7;
         }
 
         .btn-secondary {
@@ -490,7 +544,7 @@
                 </div>
 
                 <div class="variant-description">
-                    <p>Klassisches Business-Design mit professionellen blauen Akzenten und modernen Parallax-Effekten. Integrierte Hero-Text-Animationen schaffen eine dynamische, aber vertrauenswürdige Atmosphäre. Ideal für etablierte Unternehmen mit Premium-Anspruch.</p>
+                    <p>Klassisches Business-Design mit professionellen blauen Akzenten und modernen Parallax-Effekten. Integrierte Hero-Text-Animationen schaffen eine dynamische, aber vertrauenswГјrdige AtmosphГ¤re. Ideal fГјr etablierte Unternehmen mit Premium-Anspruch.</p>
                 </div>
 
                 <ul class="variant-features">
@@ -527,13 +581,13 @@
                 </div>
 
                 <div class="variant-description">
-                    <p>Ultra-minimalistisches monochrom Design mit Fokus auf Typografie und Klarheit. Reduzierte Ablenkungen und saubere Linien mit subtilen Hero-Animationen. Perfect für moderne Unternehmen, die durch Einfachheit und Eleganz überzeugen wollen.</p>
+                    <p>Ultra-minimalistisches monochrom Design mit Fokus auf Typografie und Klarheit. Reduzierte Ablenkungen und saubere Linien mit subtilen Hero-Animationen. Perfect fГјr moderne Unternehmen, die durch Einfachheit und Eleganz Гјberzeugen wollen.</p>
                 </div>
 
                 <ul class="variant-features">
                     <li>IBM Plex Sans + IBM Plex Serif</li>
                     <li>Monochrome Farbpalette</li>
-                    <li>Große Sektionsnummern</li>
+                    <li>GroГџe Sektionsnummern</li>
                     <li>Typografie-fokussiert</li>
                     <li>Minimale Ablenkungen</li>
                     <li>Klare Strukturen</li>
@@ -549,7 +603,7 @@
                 <div class="variant-header">
                     <div class="variant-number">3</div>
                     <h2 class="variant-title">Elegant Gold</h2>
-                    <p class="variant-subtitle">Luxuriös und raffiniert</p>
+                    <p class="variant-subtitle">LuxuriГ¶s und raffiniert</p>
                 </div>
 
                 <div class="variant-preview">
@@ -564,15 +618,15 @@
                 </div>
 
                 <div class="variant-description">
-                    <p>Luxuriöses Premium-Design mit goldenen Akzenten und eleganten Ornamenten. Raffinierte Hero-Text-Animationen und edle Farbpalette vermitteln Exklusivität. Ideal für High-End-Dienstleister und Luxusmarken im Facility Management.</p>
+                    <p>LuxuriГ¶ses Premium-Design mit goldenen Akzenten und eleganten Ornamenten. Raffinierte Hero-Text-Animationen und edle Farbpalette vermitteln ExklusivitГ¤t. Ideal fГјr High-End-Dienstleister und Luxusmarken im Facility Management.</p>
                 </div>
 
                 <ul class="variant-features">
                     <li>Cormorant Garamond + Open Sans</li>
                     <li>Goldene Akzentfarben (#d4af37)</li>
                     <li>Elegante Ornamente</li>
-                    <li>Luxuriöse Badges</li>
-                    <li>Reiche Farbverläufe</li>
+                    <li>LuxuriГ¶se Badges</li>
+                    <li>Reiche FarbverlГ¤ufe</li>
                     <li>Premium-Ausstrahlung</li>
                 </ul>
 
@@ -581,12 +635,12 @@
                 </div>
             </div>
 
-            <!-- Variant 4: Светлые слайды -->
+            <!-- Variant 4: РЎРІРµС‚Р»С‹Рµ СЃР»Р°Р№РґС‹ -->
             <div class="variant-card variant-4">
                 <div class="variant-header">
                     <div class="variant-number">4</div>
                     <h2 class="variant-title">Helle Slides</h2>
-                    <p class="variant-subtitle">Parallax-Effekte und nahtlose Übergänge</p>
+                    <p class="variant-subtitle">Parallax-Effekte und nahtlose ГњbergГ¤nge</p>
                 </div>
 
                 <div class="variant-preview">
@@ -601,31 +655,103 @@
                 </div>
 
                 <div class="variant-description">
-                    <p>Modernste Slide-basierte Navigation mit hellen Tönen und Parallax-Effekten. Die Bildschirme wechseln beim Scrollen wie Slides, mit vollständiger Unterstützung für mobile Geräte und Touch-Gesten. Einzigartige Benutzererfahrung mit immersiven Übergangen.</p>
+                    <p>Modernste Slide-basierte Navigation mit hellen TГ¶nen und Parallax-Effekten. Die Bildschirme wechseln beim Scrollen wie Slides, mit vollstГ¤ndiger UnterstГјtzung fГјr mobile GerГ¤te und Touch-Gesten. Einzigartige Benutzererfahrung mit immersiven Гњbergangen.</p>
                 </div>
 
                 <ul class="variant-features">
                     <li>Slide-Navigation beim Scrollen</li>
                     <li>Parallax-Effekte und Animationen</li>
-                    <li>Helle Farbverläufe und Gradient-Töne</li>
-                    <li>Vollständige mobile Responsivität</li>
-                    <li>Touch-Gesten für mobile Geräte</li>
-                    <li>Nahtlose Content-Übergänge</li>
+                    <li>Helle FarbverlГ¤ufe und Gradient-TГ¶ne</li>
+                    <li>VollstГ¤ndige mobile ResponsivitГ¤t</li>
+                    <li>Touch-Gesten fГјr mobile GerГ¤te</li>
+                    <li>Nahtlose Content-ГњbergГ¤nge</li>
                 </ul>
 
                 <div class="variant-actions">
                     <a href="variant4/index.html" class="btn btn-primary" target="_blank">Website ansehen</a>
                 </div>
             </div>
-        </div>
+            <!-- Variant 5 -->
+            <div class="variant-card variant-5">
+                <div class="variant-header">
+                    <div class="variant-number">5</div>
+                    <h2 class="variant-title">Industrial Contrast</h2>
+                    <p class="variant-subtitle">Split-Hero, Glas-Karten und Sticky Progress</p>
+                </div>
 
+                <div class="variant-preview">
+                    <div class="preview-mockup">
+                        <div class="mockup-header">COMMAND</div>
+                        <div class="mockup-content">
+                            <div class="mockup-line"></div>
+                            <div class="mockup-line"></div>
+                            <div class="mockup-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="variant-description">
+                    <p>Dunkles Industriesetting mit cyanfarbenen Glaskarten, sticky Fortschritts-Navigation und KPI-Tower. Ideal f&uuml;r Produktions- und Logistikportfolios mit Echtzeitdaten.</p>
+                </div>
+
+                <ul class="variant-features">
+                    <li>Split Hero mit KPI-Stack</li>
+                    <li>Sticky Progress Sidebar</li>
+                    <li>2x3 Capability Grid via CSS Grid</li>
+                    <li>Operations Board als Horizontal-Scroll</li>
+                    <li>Vertikale Prozess-Timeline</li>
+                    <li>Kontaktpanel mit Trust Badges</li>
+                </ul>
+
+                <div class="variant-actions">
+                    <a href="variant5/index.html" class="btn btn-primary" target="_blank">Website ansehen</a>
+                </div>
+            </div>
+
+            <!-- Variant 6 -->
+            <div class="variant-card variant-6">
+                <div class="variant-header">
+                    <div class="variant-number">6</div>
+                    <h2 class="variant-title">Organic Terracotta</h2>
+                    <p class="variant-subtitle">Kurvige Layouts und redaktionelle Storylines</p>
+                </div>
+
+                <div class="variant-preview">
+                    <div class="preview-mockup">
+                        <div class="mockup-header">HABITAT</div>
+                        <div class="mockup-content">
+                            <div class="mockup-line"></div>
+                            <div class="mockup-line"></div>
+                            <div class="mockup-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="variant-description">
+                    <p>Warme Terracotta-Palette mit organischen Formen, Accordions f&uuml;r Service-Pakete und Testimonials-Slider. Perfekt f&uuml;r Lifestyle-orientierte Offices mit Hospitality-Fokus.</p>
+                </div>
+
+                <ul class="variant-features">
+                    <li>Kurviges Hero mit Biophilic Visuals</li>
+                    <li>Editorial Story Cards</li>
+                    <li>Full-Bleed Experience Gallery</li>
+                    <li>Service-Pakete mit Akkordeon</li>
+                    <li>Testimonials-Slider mit Auto-Rotation</li>
+                    <li>Kuratiertes Kontakt-Moodboard</li>
+                </ul>
+
+                <div class="variant-actions">
+                    <a href="variant6/index.html" class="btn btn-primary" target="_blank">Website ansehen</a>
+                </div>
+            </div>
+        </div>
         <div class="info-section">
             <h2>Technische Spezifikationen</h2>
-            <p>Alle Varianten sind vollständig responsiv, SEO-optimiert und folgen modernen Webstandards. Jede Version ist sowohl als klassische Multi-Page-Website als auch als moderne Single Page Application (SPA) verfügbar.</p>
+            <p>Alle Varianten sind vollstГ¤ndig responsiv, SEO-optimiert und folgen modernen Webstandards. Jede Version ist sowohl als klassische Multi-Page-Website als auch als moderne Single Page Application (SPA) verfГјgbar.</p>
             
             <div class="tech-specs">
                 <div class="tech-spec">
-                    <h3>🌐 Vollständig responsiv</h3>
+                    <h3>рџЊђ VollstГ¤ndig responsiv</h3>
                     <ul>
                         <li>Mobile-first Design</li>
                         <li>Tablet-optimiert</li>
@@ -634,7 +760,7 @@
                     </ul>
                 </div>
                 <div class="tech-spec">
-                    <h3>⚡ Performance</h3>
+                    <h3>вљЎ Performance</h3>
                     <ul>
                         <li>Optimierte Bilder</li>
                         <li>Minimaler CSS/JS</li>
@@ -643,7 +769,7 @@
                     </ul>
                 </div>
                 <div class="tech-spec">
-                    <h3>🎨 Interaktivität</h3>
+                    <h3>рџЋЁ InteraktivitГ¤t</h3>
                     <ul>
                         <li>Parallax-Effekte</li>
                         <li>Sanfte Animationen</li>
@@ -652,7 +778,7 @@
                     </ul>
                 </div>
                 <div class="tech-spec">
-                    <h3>⚡ SPA-Features</h3>
+                    <h3>вљЎ SPA-Features</h3>
                     <ul>
                         <li>Nahtlose Navigation</li>
                         <li>Keine Seitenreloads</li>
@@ -689,3 +815,4 @@
     </script>
 </body>
 </html>
+

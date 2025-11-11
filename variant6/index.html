@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYGGE Business - Variant 6 Organic Terracotta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand-mark">
+            <span>HYGGE</span>
+            <small>Habitat</small>
+        </div>
+        <nav class="primary-nav">
+            <button class="nav-toggle" aria-label="Men&uuml; &ouml;ffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="#hero" class="nav-link active">Start</a></li>
+                <li><a href="#story" class="nav-link">Philosophie</a></li>
+                <li><a href="#gallery" class="nav-link">Erlebnis</a></li>
+                <li><a href="#materials" class="nav-link">Atelier</a></li>
+                <li><a href="#wellbeing" class="nav-link">Wellbeing</a></li>
+                <li><a href="#packages" class="nav-link">Pakete</a></li>
+                <li><a href="#testimonials" class="nav-link">Stimmen</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
+        <button class="pill-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Beratung buchen</button>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content animate-on-scroll">
+                <p class="label">Nature inspired Facility Care</p>
+                <h1>Wohlbefinden&nbsp;&amp; Effizienz im Gleichgewicht.</h1>
+                <p class="intro">Terracotta, Tageslicht und lebendige Pflanzenkonzepte schaffen Orte, in denen Teams Energie tanken und Prozesse flie&szlig;en.</p>
+                <div class="hero-ctas">
+                    <button class="primary-btn" onclick="document.getElementById('story').scrollIntoView({behavior: 'smooth'})">Story lesen</button>
+                    <button class="ghost-btn" onclick="document.getElementById('packages').scrollIntoView({behavior: 'smooth'})">Pakete ansehen</button>
+                </div>
+                <div class="hero-metrics">
+                    <div>
+                        <strong>72%</strong>
+                        <span>mehr Nutzerzufriedenheit</span>
+                    </div>
+                    <div>
+                        <strong>35%</strong>
+                        <span>weniger Leerstandstage</span>
+                    </div>
+                    <div>
+                        <strong>4.8/5</strong>
+                        <span>Bewertung f&uuml;r Servicequalit&auml;t</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-up">
+                <div class="blob"></div>
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Nat&uuml;rliches Office" loading="lazy">
+                <div class="hero-note">
+                    <p>Kuratiertes Pflanzenkonzept</p>
+                    <span>Biophile Designs, kuratiert pro Standort</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="story-section">
+            <div class="story-card animate-on-scroll">
+                <h2>R&auml;ume wie Magazine, Prozesse wie Uhrwerke.</h2>
+                <p>Wir kombinieren Innenarchitektur, Facility Services und Hospitality in einem Editorial Flow. Jede Ebene erh&auml;lt eine eigene Stimmung: ruhige Fokusbereiche, lebendige Kollaborationszonen und warme Hospitality-Suiten.</p>
+                <div class="story-grid">
+                    <div>
+                        <span>Editorial Layouts</span>
+                        <p>Kurvige Divider, Texturen in Terracotta und pigmentierten Kalkputzen.</p>
+                    </div>
+                    <div>
+                        <span>Human Centered</span>
+                        <p>Service-Concierge, Sensor-Komfort und saisonale Rituals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-image fade-in-up">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="Story Visual" loading="lazy">
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="section-head animate-on-scroll">
+                <p class="label">Experience Gallery</p>
+                <h2>Situationen, die Menschen lieben.</h2>
+            </div>
+            <div class="gallery-grid">
+                <article class="gallery-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=800&q=80" alt="Lounge">
+                    <div>
+                        <h3>Morning Retreat</h3>
+                        <p>Sanfte Beleuchtung, Kaffeesommelier und Fokuszonen mit Akustiksegeln.</p>
+                    </div>
+                </article>
+                <article class="gallery-card fade-in-up" data-delay="100">
+                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Workshop">
+                    <div>
+                        <h3>Workshop Atelier</h3>
+                        <p>Flexible Ateliermodule mit mobilen W&auml;nden und Materialbibliothek.</p>
+                    </div>
+                </article>
+                <article class="gallery-card fade-in-up" data-delay="200">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80" alt="Outdoor">
+                    <div>
+                        <h3>Terrassenstudio</h3>
+                        <p>Outdoor-Fitness, Duftkr&auml;uter und regenerative Meetingformate.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="materials" class="materials-section">
+            <div class="section-head animate-on-scroll">
+                <p class="label">Atelier</p>
+                <h2>Materialbibliothek &amp; Farbwelten.</h2>
+                <p>Handverlesene Texturen, Pflanzen und Duftprofile, die jede Etage in eine eigene Stimmung versetzen.</p>
+            </div>
+            <div class="materials-grid">
+                <article class="material-card fade-in-up">
+                    <h3>Texturen</h3>
+                    <p>Terracotta, Kalkputz und recycelter Stein bilden die Basis.</p>
+                    <ul class="material-list">
+                        <li>Terracotta Platten mit Rundfugen</li>
+                        <li>Handgesch&ouml;pfte Kalkputze</li>
+                        <li>Akustik-Paneele aus Holzfasern</li>
+                    </ul>
+                </article>
+                <article class="material-card fade-in-up" data-delay="100">
+                    <h3>Pflanzen &amp; Duft</h3>
+                    <p>Jede Zone erh&auml;lt kuratierte Pflanzen und Scent Layer.</p>
+                    <ul class="material-list">
+                        <li>Ficus lyrata + Farnmix</li>
+                        <li>Zitronenverbene &amp; Sandelholz</li>
+                        <li>Hydrokultur Monitoring</li>
+                    </ul>
+                </article>
+                <article class="material-card fade-in-up" data-delay="200">
+                    <h3>Mobiliar</h3>
+                    <p>Modulare Lounge-Elemente verbinden Boutique- und Office-Welt.</p>
+                    <ul class="material-list">
+                        <li>Curved Sofas in Boucl&eacute;</li>
+                        <li>Steinzeug-Tische mit Messing</li>
+                        <li>Mobile Atelierw&auml;nde</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="palette-stack fade-in-up">
+                <div class="palette-chip" style="--chip:#c2561a">
+                    <span>Terracotta</span>
+                    <small>#C2561A</small>
+                </div>
+                <div class="palette-chip" style="--chip:#f4e3c3">
+                    <span>Sand</span>
+                    <small>#F4E3C3</small>
+                </div>
+                <div class="palette-chip" style="--chip:#6d9773">
+                    <span>Sage</span>
+                    <small>#6D9773</small>
+                </div>
+                <div class="palette-chip" style="--chip:#1f3b2c">
+                    <span>Forest</span>
+                    <small>#1F3B2C</small>
+                </div>
+            </div>
+        </section>
+
+        <section id="wellbeing" class="wellbeing-section">
+            <div class="section-head animate-on-scroll">
+                <p class="label">Wellbeing</p>
+                <h2>Sinnliche Datenpunkte f&uuml;r gesunde Arbeitswelten.</h2>
+            </div>
+            <div class="wellbeing-grid">
+                <div class="wellbeing-card fade-in-up">
+                    <span>CO&#8322; Balance</span>
+                    <strong>540 ppm</strong>
+                    <p>Sensorische Steuerung der Bel&uuml;ftung gehalten unter 600 ppm.</p>
+                </div>
+                <div class="wellbeing-card fade-in-up" data-delay="100">
+                    <span>Lichtkurve</span>
+                    <strong>4200 K</strong>
+                    <p>Tageslicht-LEDs folgen einer sanften Circadian-Kurve.</p>
+                </div>
+                <div class="wellbeing-card fade-in-up" data-delay="200">
+                    <span>Regenerationsquote</span>
+                    <strong>+38%</strong>
+                    <p>Mitarbeitende nutzen bewusst Retreat-Bereiche.</p>
+                </div>
+            </div>
+            <div class="journey-map">
+                <div class="journey-step">
+                    <span>1</span>
+                    <p>Ankommen mit Duft- und Sound-Ritual.</p>
+                </div>
+                <div class="journey-step">
+                    <span>2</span>
+                    <p>Fokuszeit mit adaptivem Licht.</p>
+                </div>
+                <div class="journey-step">
+                    <span>3</span>
+                    <p>Community Sessions auf Terrassenstudio.</p>
+                </div>
+                <div class="journey-step">
+                    <span>4</span>
+                    <p>Evening Reset mit Lounge-Lighting.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages" class="packages-section">
+            <div class="section-head animate-on-scroll">
+                <p class="label">Service Pakete</p>
+                <h2>Modulare Angebote f&uuml;r jede Kultur.</h2>
+            </div>
+            <div class="accordion">
+                <button class="accordion-toggle" data-accordion>
+                    <span>Basis Habitat</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-panel">
+                    <ul>
+                        <li>T&auml;gliche Wohlbefindenschecks</li>
+                        <li>Kuratiertes Pflanzenpflegeprogramm</li>
+                        <li>Nachhaltige Reinigungs- und Kaffeeservices</li>
+                    </ul>
+                </div>
+
+                <button class="accordion-toggle" data-accordion>
+                    <span>Signature Flow</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-panel">
+                    <ul>
+                        <li>Hospitality Team mit Concierge</li>
+                        <li>Jahreszeitliche Rauminszenierungen</li>
+                        <li>Sensorik f&uuml;r Luftqualit&auml;t und Auslastung</li>
+                    </ul>
+                </div>
+
+                <button class="accordion-toggle" data-accordion>
+                    <span>Bespoke Rituals</span>
+                    <span class="icon">+</span>
+                </button>
+                <div class="accordion-panel">
+                    <ul>
+                        <li>Markenstory-Workshops</li>
+                        <li>Kuratoren-Team f&uuml;r Events &amp; Kulinarik</li>
+                        <li>Premium Service-Level mit 24/7 Betreuung</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-head animate-on-scroll">
+                <p class="label">Stimmen</p>
+                <h2>Erfahrungen unserer Kunden.</h2>
+            </div>
+            <div class="testimonial-slider" data-slider>
+                <div class="slides">
+                    <article class="testimonial-card">
+                        <p>&bdquo;Unser Campus wirkt wie ein Boutique-Hotel. Mitarbeitende bleiben l&auml;nger, Kunden bleiben nach Meetings zum Austausch.&ldquo;</p>
+                        <span>Leitung Workplace Experience, Tech</span>
+                    </article>
+                    <article class="testimonial-card">
+                        <p>&bdquo;Die Ritual-Programme erzeugen ein Gef&uuml;hl von Zugeh&ouml;rigkeit. Services laufen sichtbar, aber nie laut.&ldquo;</p>
+                        <span>HR Direktorin, Beratung</span>
+                    </article>
+                    <article class="testimonial-card">
+                        <p>&bdquo;Wir kombinieren jetzt ESG-Reporting mit sensorisch erlebbaren Qualit&auml;ten. Das zahlt direkt auf Employer Branding ein.&ldquo;</p>
+                        <span>COO, Creative Industries</span>
+                    </article>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" data-prev aria-label="Zur&uuml;ck">&#8592;</button>
+                    <div class="slider-dots"></div>
+                    <button class="slider-btn" data-next aria-label="Weiter">&#8594;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-card animate-on-scroll">
+                <div class="contact-copy">
+                    <p class="label">Kontakt</p>
+                    <h2>Kuratiertes Erstgespr&auml;ch.</h2>
+                    <p>In 30 Minuten analysieren wir Kultur, Markenwerte und Fl&auml;chenbedarf. Danach erhalten Sie ein kuratiertes Moodboard sowie einen Fahrplan.</p>
+                    <div class="contact-info">
+                        <span>Berlin &amp; M&uuml;nchen Studio</span>
+                        <span>service@hygge-business.de</span>
+                        <span>+49 (0) 30 123 456 70</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Business Mail" required>
+                    <textarea rows="3" placeholder="Was sollen wir kuratieren?" required></textarea>
+                    <button type="submit">Moodboard erhalten</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="scroll-animations.js"></script>
+</body>
+</html>
