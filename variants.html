@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Varianten</title>
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/base/variables.css">
+    <link rel="stylesheet" href="styles/base/typography.css">
+    <link rel="stylesheet" href="styles/layout/grid.css">
+    <link rel="stylesheet" href="styles/utilities/utilities.css">
+    <style>
+        .variants-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .page-description {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .variants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .variant-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .variant-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .variant-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+        }
+
+        .variant-link:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .variant-preview {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .variant-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .variant-preview span {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Unique backgrounds for each variant */
+        .variant-1 .variant-preview {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .variant-2 .variant-preview {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .variant-3 .variant-preview {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .variant-4 .variant-preview {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        .variant-5 .variant-preview {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        .variant-6 .variant-preview {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        .variant-content {
+            padding: 1.5rem;
+        }
+
+        .variant-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .variant-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .variant-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .variant-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .variant-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        .back-home {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .back-home a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .back-home a:hover {
+            color: var(--primary-hover);
+        }
+
+        @media (max-width: 768px) {
+            .variants-container {
+                padding: 1rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .variants-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .variant-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="variants-container">
+        <header class="page-header">
+            <h1 class="page-title">Design Varianten</h1>
+            <p class="page-description">
+                Entdecken Sie verschiedene Designvarianten unserer Website. 
+                Jede Variante bietet einzigartige visuelle Ansätze und Funktionen.
+            </p>
+        </header>
+
+        <div class="variants-grid">
+            <a href="variants/variant1/index.html" class="variant-link">
+                <div class="variant-card variant-1">
+                    <div class="variant-preview">
+                        <span>Hygge Business</span>
+                    </div>
+                    <div class="variant-content">
+                        <h3 class="variant-title">Hygge Business</h3>
+                        <p class="variant-description">
+                            Ein eleganter, professioneller Ansatz mit warmen Farben und modernen Animationen. Fokus auf Benutzerfreundlichkeit und sanfte Übergänge.
+                        </p>
+                        <ul class="variant-features">
+                            <li>Parallax-Effekte</li>
+                            <li>Scroll-Animationen</li>
+                            <li>Professionelle Optik</li>
+                            <li>Video-Hero-Sektion</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="variants/variant2/index.html" class="variant-link">
+                <div class="variant-card variant-2">
+                    <div class="variant-preview">
+                        <span>Minimalist</span>
+                    </div>
+                    <div class="variant-content">
+                        <h3 class="variant-title">Minimalist</h3>
+                        <p class="variant-description">
+                            Klare Linien und reduziertes Design. Konzentration auf Inhalte mit subtilen Animationen und moderner Typografie.
+                        </p>
+                        <ul class="variant-features">
+                            <li>Minimalistisches Design</li>
+                            <li>Saubere Typografie</li>
+                            <li>Subtile Animationen</li>
+                            <li>Schnelle Ladezeiten</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="variants/variant3/index.html" class="variant-link">
+                <div class="variant-card variant-3">
+                    <div class="variant-preview">
+                        <span>Elegant Gold</span>
+                    </div>
+                    <div class="variant-content">
+                        <h3 class="variant-title">Elegant Gold</h3>
+                        <p class="variant-description">
+                            Luxuriöses Design mit goldenen Akzenten und eleganter Typografie. Perfekt für Premium-Positionierung.
+                        </p>
+                        <ul class="variant-features">
+                            <li>Goldene Akzente</li>
+                            <li>Elegante Schriften</li>
+                            <li>Luxuriöse Optik</li>
+                            <li>Premium-Feeling</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="variants/variant4/index.html" class="variant-link">
+                <div class="variant-card variant-4">
+                    <div class="variant-preview">
+                        <span>Creative Slides</span>
+                    </div>
+                    <div class="variant-content">
+                        <h3 class="variant-title">Creative Slides</h3>
+                        <p class="variant-description">
+                            Einzigartiges Slide-basiertes Design mit kreativen Übergängen und innovativer Navigation.
+                        </p>
+                        <ul class="variant-features">
+                            <li>Slide-Navigation</li>
+                            <li>Kreative Übergänge</li>
+                            <li>Innovative Layouts</li>
+                            <li>Interaktive Elemente</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="variants/variant5/index.html" class="variant-link">
+                <div class="variant-card variant-5">
+                    <div class="variant-preview">
+                        <span>Tech Grid</span>
+                    </div>
+                    <div class="variant-content">
+                        <h3 class="variant-title">Tech Grid</h3>
+                        <p class="variant-description">
+                            Modernes Grid-Layout mit technologischem Look. Ideal für IT- und Tech-Unternehmen.
+                        </p>
+                        <ul class="variant-features">
+                            <li>Grid-basiertes Layout</li>
+                            <li>Tech-orientiertes Design</li>
+                            <li>Progressive Sidebar</li>
+                            <li>Moderne Schriften</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+
+            <a href="variants/variant6/index.html" class="variant-link">
+                <div class="variant-card variant-6">
+                    <div class="variant-preview">
+                        <span>Natural Flow</span>
+                    </div>
+                    <div class="variant-content">
+                        <h3 class="variant-title">Natural Flow</h3>
+                        <p class="variant-description">
+                            Organische Formen und natürliche Farben. Ein warmes, einladendes Design mit fließenden Animationen.
+                        </p>
+                        <ul class="variant-features">
+                            <li>Organische Formen</li>
+                            <li>Natürliche Farben</li>
+                            <li>Fließende Animationen</li>
+                            <li>Warmes Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="back-home">
+            <a href="/">← Zurück zur Hauptseite</a>
+        </div>
+    </div>
+</body>
+</html>
