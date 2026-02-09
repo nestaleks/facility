@@ -1,0 +1,24 @@
+{
+  "name": "decktum-deutschland-website",
+  "version": "1.0.0",
+  "description": "Modern facility management website for decktum Deutschland",
+  "scripts": {
+    "minify": "node build/minify.js",
+    "validate": "node build/validate.js", 
+    "lint": "eslint basic/scripts/main.js variants/*/js/main.js --fix",
+    "optimize": "node build/optimize.js",
+    "cleanup": "node build/cleanup.js",
+    "build": "npm run minify && npm run validate && npm run lint && npm run optimize",
+    "serve": "http-server . -p 3000 -c-1",
+    "test": "playwright test tests/simple.spec.js --project=chromium",
+    "test-all": "playwright test"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.2",
+    "terser": "^5.19.4", 
+    "html-validator": "^6.0.1",
+    "eslint": "^8.57.0",
+    "@playwright/test": "^1.41.0",
+    "http-server": "^14.1.1"
+  }
+}
